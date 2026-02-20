@@ -49,4 +49,12 @@ export const chapters: Chapter[] = [
     hasQuiz: false,
     estimatedTime: 15,
   },
+  {
+    id: 'advanced',
+    title: '7. Advanced Features',
+    description: 'Master Pipeline Parameters and Caching strategies.',
+    order: 7,
+    hasQuiz: false,
+    estimatedTime: 10,
+  },
 ];

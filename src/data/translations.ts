@@ -96,6 +96,14 @@ interface TranslationStructure {
       step3Desc: string;
       finalNote: string;
     };
+    advanced: {
+      title: string;
+      p1: string;
+      paramsTitle: string;
+      paramsDesc: string;
+      cachingTitle: string;
+      cachingDesc: string;
+    };
   }
 }
 
@@ -114,6 +122,7 @@ export const translations: Record<Language, TranslationStructure> = {
       artifacts: { title: '4. Artifact Passing', description: 'Pass datasets and models between components.' },
       underthehood: { title: '5. Under the Hood', description: 'Pods, Logs, and Kubernetes troubleshooting.' },
       complete: { title: '6. Real World Example', description: 'A complete Iris Classification pipeline from scratch.' },
+      advanced: { title: '7. Advanced Features', description: 'Master Pipeline Parameters and Caching strategies.' },
     },
     common: {
       next: 'Next',
@@ -197,6 +206,14 @@ export const translations: Record<Language, TranslationStructure> = {
         step3Title: 'Step 3: Compile',
         step3Desc: 'Finally, we compile the pipeline to a YAML file ready for Kubeflow.',
         finalNote: 'This YAML file is what you upload to the Kubeflow UI to run the experiment!'
+      },
+      advanced: {
+        title: '7. Advanced Features',
+        p1: 'Take your pipelines to the next level by mastering runtime parameters and intelligent caching.',
+        paramsTitle: 'Pipeline Parameters',
+        paramsDesc: 'Instead of hardcoding values, pass arguments to your pipeline function. This allows you to reuse the same pipeline for different experiments (e.g., changing learning rate or model URI).',
+        cachingTitle: 'Caching Strategy',
+        cachingDesc: 'KFP caches successful task executions by default to save time and resources. However, for tasks that fetch external data (like downloading from a URL), you should DISABLE caching to ensure fresh data is always retrieved.'
       }
     }
   },
@@ -214,6 +231,7 @@ export const translations: Record<Language, TranslationStructure> = {
       artifacts: { title: '4. Passaggio di Artefatti', description: 'Passa dataset e modelli tra i componenti.' },
       underthehood: { title: '5. Sotto il cofano', description: 'Pod, Log e troubleshooting su Kubernetes.' },
       complete: { title: '6. Esempio Reale', description: 'Una pipeline completa di classificazione Iris da zero.' },
+      advanced: { title: '7. Funzionalità Avanzate', description: 'Padroneggia i Parametri e il Caching.' },
     },
     common: {
       next: 'Avanti',
@@ -297,6 +315,14 @@ export const translations: Record<Language, TranslationStructure> = {
         step3Title: 'Step 3: Compila',
         step3Desc: 'Infine, compiliamo la pipeline in un file YAML pronto per Kubeflow.',
         finalNote: 'Questo file YAML è ciò che carichi sulla UI di Kubeflow per eseguire l\'esperimento!'
+      },
+      advanced: {
+        title: '7. Funzionalità Avanzate',
+        p1: 'Porta le tue pipeline al livello successivo padroneggiando i parametri a runtime e il caching intelligente.',
+        paramsTitle: 'Parametri della Pipeline',
+        paramsDesc: 'Invece di scrivere valori fissi nel codice, passa argomenti alla funzione della pipeline. Questo ti permette di riusare la stessa pipeline per esperimenti diversi (es. cambiando learning rate o URI del modello).',
+        cachingTitle: 'Strategia di Caching',
+        cachingDesc: 'KFP salva in cache le esecuzioni completate con successo per risparmiare tempo e risorse. Tuttavia, per task che scaricano dati esterni (come da un URL), dovresti DISABILITARE il caching per garantire di avere sempre dati freschi.'
       }
     }
   },

@@ -7,6 +7,7 @@ import { ChapterHelloWorld } from './pages/chapters/ChapterHelloWorld';
 import { ChapterArtifacts } from './pages/chapters/ChapterArtifacts';
 import { ChapterUnderTheHood } from './pages/chapters/ChapterUnderTheHood';
 import { ChapterCompleteExample } from './pages/chapters/ChapterCompleteExample';
+import { ChapterAdvanced } from './pages/chapters/ChapterAdvanced';
 import { ProgressDashboard } from './pages/ProgressDashboard';
 import { Cheatsheet } from './components/Cheatsheet';
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/tutorial/artifacts" element={<ChapterArtifacts />} />
           <Route path="/tutorial/underthehood" element={<ChapterUnderTheHood />} />
           <Route path="/tutorial/complete-example" element={<ChapterCompleteExample />} />
+          <Route path="/tutorial/advanced" element={<ChapterAdvanced />} />
           <Route path="/progress" element={<ProgressDashboard />} />
           <Route path="*" element={<Navigate to="/tutorial/components" replace />} />
         </Routes>
