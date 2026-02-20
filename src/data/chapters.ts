@@ -1,0 +1,52 @@
+import { Chapter } from '../types';
+
+export const chapters: Chapter[] = [
+  {
+    id: 'components',
+    title: '1. Basics: The Component',
+    description: 'Learn how to transform Python functions into Kubeflow components.',
+    order: 1,
+    hasQuiz: false,
+    estimatedTime: 5,
+  },
+  {
+    id: 'pipeline',
+    title: '2. The Pipeline (Graph)',
+    description: 'Understand how @dsl.pipeline connects components into a DAG.',
+    order: 2,
+    hasQuiz: false,
+    estimatedTime: 10,
+  },
+  {
+    id: 'helloworld',
+    title: '3. Hello World & YAML',
+    description: 'Build an end-to-end pipeline and generate the YAML for Kubernetes.',
+    order: 3,
+    hasQuiz: false,
+    estimatedTime: 15,
+  },
+  {
+    id: 'artifacts',
+    title: '4. Artifact Passing',
+    description: 'Pass complex data (Datasets, Models) between components.',
+    order: 4,
+    hasQuiz: false,
+    estimatedTime: 10,
+  },
+  {
+    id: 'underthehood',
+    title: '5. Under the Hood',
+    description: 'Understand Pods, Logs, and common Kubernetes errors.',
+    order: 5,
+    hasQuiz: false,
+    estimatedTime: 10,
+  },
+  {
+    id: 'complete-example',
+    title: '6. Real World Example',
+    description: 'A complete Iris Classification pipeline from scratch.',
+    order: 6,
+    hasQuiz: false,
+    estimatedTime: 15,
+  },
+];
